@@ -1,0 +1,52 @@
+{
+  "command": [
+    "node",
+    "app.mjs"
+  ],
+  "expected": {
+    "as_of": "2026-09-22",
+    "overdue_segments": 1,
+    "due_today_segments": 1,
+    "historical_late_visits": 2,
+    "worklist": [
+      {
+        "segment": "Cedar spur",
+        "due_date": "2026-09-15",
+        "status": "overdue",
+        "days_overdue": 7,
+        "visit_count": 1,
+        "last_serviced": "2026-09-08",
+        "late_visits": []
+      },
+      {
+        "segment": "Ridge gate",
+        "due_date": "2026-09-22",
+        "status": "due_today",
+        "days_overdue": 0,
+        "visit_count": 0,
+        "last_serviced": null,
+        "late_visits": []
+      },
+      {
+        "segment": "Creek steps",
+        "due_date": "2026-09-24",
+        "status": "upcoming",
+        "days_overdue": 0,
+        "visit_count": 2,
+        "last_serviced": "2026-09-10",
+        "late_visits": [
+          {
+            "due": "2026-08-15",
+            "serviced": "2026-08-20",
+            "days_late": 5
+          },
+          {
+            "due": "2026-09-03",
+            "serviced": "2026-09-10",
+            "days_late": 7
+          }
+        ]
+      }
+    ]
+  }
+}
